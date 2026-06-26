@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import {
   DocumentTextIcon,
   CalendarDaysIcon,
@@ -38,23 +40,24 @@ export default function Home() {
 
               <div className="mt-8 flex gap-4">
 
-                <a
-                  href="/add-entry"
-                  className="
-                  bg-blue-600
-                  hover:bg-blue-700
-                  text-white
-                  px-6
-                  py-3
-                  rounded-xl
-                  font-semibold
-                  "
-                >
-                  Start Journaling
-                </a>
+                <Link
+  to="/add-entry"
+  className="
+    bg-blue-600
+    hover:bg-blue-700
+    text-white
+    px-6
+    py-3
+    rounded-xl
+    font-semibold
+  "
+>
+  Start Journaling
+            </Link>
 
-                <a
-                  href="/entries"
+            <Link
+              to="/entries"
+                
                   className="
                   border
                   border-blue-600
@@ -66,7 +69,7 @@ export default function Home() {
                   "
                 >
                   View Entries
-                </a>
+                </Link>
 
               </div>
 
